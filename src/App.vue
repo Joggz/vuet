@@ -1,17 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="p-12 font-sans">
+    <div class="border py-2 shadow-lg rounded-md">
+      <nav class="flex justify-evenly font-sans">
+        <router-link to="/teachers">Teachers</router-link>
+        <router-link to="/students">Students</router-link>
+        <router-link to="/add-teacher">Add Teacher</router-link>
+        <router-link to="/add-student">Add Student</router-link>
+      </nav>
+    </div>
+
+    <div class="border py-2 mt-2 min-h-[40vh]">
+      <router-view></router-view>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+export default {
+  name: "App",
+};
+</script>
+
+<style>
+/* Add your styles here */
+</style>
+
+<!-- <template>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <StudentForm />
+  <TeacherForm />
+</template>
+
+<script>
+import HelloWorld from "./components/HelloWorld.vue";
+import StudentForm from "./components/StudentForm.vue";
+import TeacherForm from "./components/TeacherForm.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+    StudentForm,
+    TeacherForm,
+  },
+};
 </script>
 
 <style>
@@ -23,4 +56,4 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-</style>
+</style> -->
