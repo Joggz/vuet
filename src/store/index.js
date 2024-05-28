@@ -7,7 +7,17 @@ export const useMainStore = defineStore("main", {
   }),
   actions: {
     addTeacher(teacher) {
-      this.teachers.push(teacher);
+      if (this.teachers.length === 0) {
+        this.teachers.push(teacher);
+      } else {
+        if (
+          this.teachers.find((t) => t.teacherNumber === teacher.teacherNumber)
+        ) {
+          alert("Teacher already exists");
+
+          return;
+        }
+      }
     },
     editTeacher(updatedTeacher) {
       const index = this.teachers.findIndex(
@@ -24,7 +34,16 @@ export const useMainStore = defineStore("main", {
       );
     },
     addStudent(student) {
-      this.students.push(student);
+      if (this.students.length === 0) {
+        this.students.push(student);
+      } else {
+        if (
+          this.students.find((s) => s.studentNumber === student.studentNumber)
+        ) {
+          alert("Student already exist");
+          return;
+        }
+      }
     },
     editStudent(updatedStudent) {
       const index = this.students.findIndex(

@@ -105,13 +105,14 @@ export default {
     );
 
     const submitEdit = () => {
-      const age =
-        new Date().getFullYear() -
-        new Date(localStudent.value.dob).getFullYear();
-      if (age > 3) {
-        alert("Student must be at most 3 years old");
-        return;
-      }
+      // const age =
+      //   new Date().getFullYear() -
+      //   new Date(localStudent.value.dob).getFullYear();
+      // you can check for age if it was a criteria
+      // if (age > 22) {
+      //   alert("Student must be at most 3 years old");
+      //   return;
+      // }
 
       emit("updateStudent", localStudent.value);
     };
