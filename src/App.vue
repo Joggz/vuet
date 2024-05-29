@@ -4,10 +4,26 @@
       <nav
         class="flex flex-col items-center py-2 md:flex-row md:justify-evenly font-sans"
       >
-        <router-link to="/teachers" class="py-2">Teachers</router-link>
-        <router-link to="/students" class="py-2">Students</router-link>
-        <router-link to="/add-teacher" class="py-2">Add Teacher</router-link>
-        <router-link to="/add-student" class="py-2">Add Student</router-link>
+        <router-link
+          to="/teachers"
+          class="py-2 border-spacing-11 border-b-2 w-full text-center md:border-none"
+          >Teachers</router-link
+        >
+        <router-link
+          to="/students"
+          class="py-2 border-spacing-11 border-b-2 w-full text-center md:border-none"
+          >Students</router-link
+        >
+        <router-link
+          to="/add-teacher"
+          class="py-2 border-spacing-11 border-b-2 w-full text-center md:border-none"
+          >Add Teacher</router-link
+        >
+        <router-link
+          to="/add-student"
+          class="py-2 border-spacing-11 border-b-2 w-full text-center md:border-none"
+          >Add Student</router-link
+        >
       </nav>
     </div>
 
