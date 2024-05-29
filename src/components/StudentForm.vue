@@ -81,12 +81,12 @@ export default {
     });
 
     const saveStudent = () => {
-      // const age =
-      //   new Date().getFullYear() - new Date(student.value.dob).getFullYear();
-      // if (age > 22) {
-      //   alert("Student must be at most 22 years old");
-      //   return;
-      // }
+      const age =
+        new Date().getFullYear() - new Date(student.value.dob).getFullYear();
+      if (age > 22) {
+        alert("Student must be at most 22 years old");
+        return;
+      }
 
       store.addStudent(student.value);
       student.value = {
