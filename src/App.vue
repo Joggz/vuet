@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="p-12 font-sans">
+  <div id="app" class="p-12 bg-gray-100 min-h-screen font-sans">
     <div class="border py-2 shadow-lg rounded-md">
       <nav
         class="flex flex-col items-center py-2 md:flex-row md:justify-evenly font-sans"
@@ -11,7 +11,7 @@
       </nav>
     </div>
 
-    <div class="border py-2 mt-2 min-h-[40vh]">
+    <div class="border md:mt-4 py-2 mt-2 min-h-[40vh] shadow-xl">
       <router-view></router-view>
     </div>
   </div>
