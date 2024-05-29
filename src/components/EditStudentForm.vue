@@ -1,6 +1,6 @@
 <template>
   <div
-    class="edit-student-form border mt-14 p-8 rounded-lg max-w-max shadow-xl z-50 absolute left-[40%] bg-white"
+    class="edit-student-form border md:mt-14 p-8 rounded-lg max-w-max shadow-xl z-50 absolute md:left-[40%] bg-white"
   >
     <h3 class="text-center p-4">Edit Student</h3>
     <form @submit.prevent="submitEdit">

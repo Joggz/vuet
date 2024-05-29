@@ -1,6 +1,6 @@
 <template>
-  <div class="p-8 w-[70%] mx-auto">
-    <form @submit.prevent="saveTeacher" class="">
+  <div class="p-2 md:p-2 md:w-[90%] mx-auto">
+    <form @submit.prevent="saveTeacher">
       <div class="py-2">
         <label for="nationalId" class="w-[15%]">National ID:</label>
         <input
@@ -9,7 +9,7 @@
           v-model="teacher.nationalId"
           required
           type="number"
-          class="w-[85%] ml-2 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          class="w-[65%] md:w-[85%] ml-2 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
       </div>
       <div class="py-2">
@@ -35,7 +35,7 @@
           placeholder=" Name"
           required
           type="text"
-          class="w-[85%] ml-12 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          class="w-[65%] md:w-[85%] ml-12 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
       </div>
       <div class="py-2">
@@ -46,7 +46,7 @@
           placeholder="Surname"
           required
           type="text"
-          class="w-[85%] ml-6 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          class="w-[65%] md:w-[85%] ml-6 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
       </div>
       <div class="py-2">
@@ -56,7 +56,7 @@
           id="dob"
           placeholder="DOB"
           v-model="teacher.dob"
-          class="w-[85%] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          class="w-[60%] md:w-[85%]] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           required
         />
       </div>
@@ -67,7 +67,7 @@
           placeholder="Teacher Number"
           type="number"
           v-model="teacher.teacherNumber"
-          class="w-[85%] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          class="w-[60%] md:w-[85%] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           required
         />
       </div>
@@ -78,12 +78,12 @@
           placeholder="Salary"
           v-model="teacher.salary"
           type="number"
-          class="w-[85%] ml-10 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          class="w-[60%] md:w-[85%] ml-10 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
       </div>
       <button
         type="submit"
-        class="border w-[80%] ml-24 bg-blue-500 text-white mt-5 p-4 rounded-lg"
+        class="border w-[80%] ml-10 md:ml-24 bg-blue-500 text-white mt-5 p-4 rounded-lg"
       >
         Save Teacher
       </button>

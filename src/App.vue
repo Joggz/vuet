@@ -1,11 +1,13 @@
 <template>
   <div id="app" class="p-12 font-sans">
     <div class="border py-2 shadow-lg rounded-md">
-      <nav class="flex justify-evenly font-sans">
-        <router-link to="/teachers">Teachers</router-link>
-        <router-link to="/students">Students</router-link>
-        <router-link to="/add-teacher">Add Teacher</router-link>
-        <router-link to="/add-student">Add Student</router-link>
+      <nav
+        class="flex flex-col items-center py-2 md:flex-row md:justify-evenly font-sans"
+      >
+        <router-link to="/teachers" class="py-2">Teachers</router-link>
+        <router-link to="/students" class="py-2">Students</router-link>
+        <router-link to="/add-teacher" class="py-2">Add Teacher</router-link>
+        <router-link to="/add-student" class="py-2">Add Student</router-link>
       </nav>
     </div>
 

@@ -1,7 +1,7 @@
 <template>
-  <div class="p-8 w-[70%] mx-auto">
-    <form @submit.prevent="saveStudent">
-      <div class="py-2">
+  <div class="md:p-2 md:w-[90%] mx-auto">
+    <form @submit.prevent="saveStudent" class="w-full px-2">
+      <div class="py-4">
         <label for="nationalId">National ID:</label>
         <input
           placeholder="National ID"
@@ -9,7 +9,7 @@
           v-model="student.nationalId"
           required
           type="number"
-          class="w-[85%] ml-2 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          class="w-[65%] md:w-[85%] ml-2 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
       </div>
       <div class="py-2">
@@ -20,7 +20,7 @@
           v-model="student.name"
           required
           placeholder=" Name"
-          class="w-[85%] ml-12 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          class="w-[65%] md:w-[85%] ml-12 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
       </div>
       <div class="py-2">
@@ -31,7 +31,7 @@
           placeholder="Surname"
           v-model="student.surname"
           required
-          class="w-[85%] ml-6 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          class="w-[65%] md:w-[85%] ml-6 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
       </div>
       <div>
@@ -41,7 +41,7 @@
           id="dob"
           v-model="student.dob"
           required
-          class="w-[85%] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          class="w-[65%] md:w-[85%] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
       </div>
       <div class="py-2">
@@ -51,12 +51,12 @@
           v-model="student.studentNumber"
           required
           type="number"
-          class="w-[85%] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          class="w-[55%] md:w-[85%] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
       </div>
       <button
         type="submit"
-        class="border w-[80%] ml-24 bg-blue-500 text-white mt-5 p-4 rounded-lg"
+        class="border w-[80%] ml-10 md:ml-24 bg-blue-500 text-white mt-5 p-4 rounded-lg"
       >
         Save Student
       </button>
